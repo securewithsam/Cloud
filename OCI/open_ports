@@ -1,10 +1,6 @@
-#Open the navigation menu and click Networking, and then click Virtual Cloud Networks.
+#How to open ports 80/443 to access via public internet 
 
 
-Open the navigation menu and click Networking, and then click Virtual Cloud Networks.
-An Add Ingress Rules dialog is displayed.
-
-Fill in the ingress rule with the following information.
 Fill in the ingress rule as follows:
 
 Stateless: Checked
