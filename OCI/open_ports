@@ -1,0 +1,24 @@
+#Open the navigation menu and click Networking, and then click Virtual Cloud Networks.
+
+
+Open the navigation menu and click Networking, and then click Virtual Cloud Networks.
+An Add Ingress Rules dialog is displayed.
+
+Fill in the ingress rule with the following information.
+Fill in the ingress rule as follows:
+
+Stateless: Checked
+Source Type: CIDR
+Source CIDR: 0.0.0.0/0
+IP Protocol: TCP
+Source port range: (leave-blank)
+Destination Port Range: 80
+Description: Allow HTTP connections
+Click Add Ingress Rules. Now HTTP connections are allowed. Your VCN is configured for Apache server.
+
+Click Add Ingress Rules.
+
+
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 443 -j ACCEPT
+sudo netfilter-persistent save
