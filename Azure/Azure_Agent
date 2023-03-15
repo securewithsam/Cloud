@@ -1,0 +1,22 @@
+# Rereading the package lists
+sudo -E apt update
+
+# Curl Modul - Installation
+sudo -E apt install -y curl
+
+# Dept - File Download using Curl
+curl https://packages.microsoft.com/ubuntu/20.04/prod/pool/main/a/azcmagent/azcmagent_1.20.02012.246_amd64.deb -o /tmp/azcmagent.deb
+
+# Package installation
+sudo -E apt install -y /tmp/azcmagent.deb
+
+# AZCMAGENT - Availability Check
+azcmagent
+
+# Connecting Agent
+azcmagent connect --resource-group "resourceGroupName" --tenant-id "tenantID" --location "regionName" --subscription-id "subscriptionID" --cloud "cloudName"
+# see link: https://it-infrastructure.solutions/onboarding-azure-arc-linux-ubuntu/
+
+
+
+sudo azcmagent connect --resource-group "rg-cac-cloudfound-inframon-tst" --tenant-id "sdfdfsdfsdf" --location "canadacentral" --subscription-id "sdfsdfsdfsdf" --cloud "AzureCloud" --correlation-id "kjhdkjshfksjdhf";
