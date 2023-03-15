@@ -19,4 +19,4 @@ azcmagent connect --resource-group "resourceGroupName" --tenant-id "tenantID" --
 
 
 
-sudo azcmagent connect --resource-group "rg-cac-cloudfound-inframon-tst" --tenant-id "sdfdfsdfsdf" --location "canadacentral" --subscription-id "sdfsdfsdfsdf" --cloud "AzureCloud" --correlation-id "kjhdkjshfksjdhf";
+sudo azcmagent connect --resource-group "rg-cac-cloudfound-inframon-tst" --tenant-id "sdfdfsdfsdf" --location "canadacentral" --subscription-id "sdfsdfsdfsdf" --cloud "AzureCloud" --correlation-id "kjhdkjshfksjdhf" --verbose
