@@ -1,7 +1,7 @@
 On Azure portal go to >Log Analytics workspaces>Logs 
 
 
-####Heartbeat:
+#### Heartbeat:
 ```sh
 Heartbeat
 | summarize Lastbeat = arg_max(TimeGenerated, *) by Computer, ComputerEnvironment
