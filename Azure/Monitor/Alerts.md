@@ -1,4 +1,5 @@
 On Azure portal go to >Log Analytics workspaces>Logs 
+#### https://github.com/tobiasmcvey/kusto-queries
 
 
 #### Heartbeat:
