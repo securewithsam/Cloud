@@ -10,6 +10,20 @@ Heartbeat
 | summarize by Computer, ComputerEnvironment
 
 ```
+#### Create azure monitor alert when my disk space low in virtual machine
+```sh
+let setgbvalue = 200;//Set the disk space you want to check for. 
+ Perf 
+ | where TimeGenerated > ago(6h)
+ | where ObjectName == "LogicalDisk" and CounterName == "Free Megabytes" 
+// exclude all others as we are checking for C: here 
+ | where InstanceName != "D:"  
+ | where InstanceName  != "_Total" 
+ | where InstanceName != "HarddiskVolume1" 
+ | extend FreeSpaceGB = CounterValue/1024 // converting the counter value to GB 
+ | summarize FreeSpace = min(FreeSpaceGB) by Computer, InstanceName 
+ | where FreeSpace < setgbvalue //setting condition to check if the value is less than our set value . 
+```
 
 #### Disk Utilization:
 
