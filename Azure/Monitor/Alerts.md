@@ -9,7 +9,7 @@ Heartbeat
 | where Lastbeat < ago(5m)
 | summarize by Computer, ComputerEnvironment
 ```
-#### query below will show the Machines with less than 10 Gb. With free diskspace.
+#### Query to show Machines with less than 10 Gb. With free diskspace.
 ```sh
 InsightsMetrics
 | where Name == "FreeSpacePercentage"
