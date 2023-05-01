@@ -31,8 +31,19 @@ Perf
 | render barchart kind=unstacked
 
 ```
+### Or
+```sh
+// New capacity query
+let setpctvalue = 60; // enter a % value to check
+Perf
+| where TimeGenerated > ago(1d)
+| where ObjectName == "LogicalDisk" and CounterName == "% Free Space"
+| where InstanceName contains ":"
+| summarize FreeSpace = min(CounterValue) by Computer, InstanceName
+| where FreeSpace < setpctvalue
+| render barchart kind = stacked
 
-
+```
 #### Create azure monitor alert when my disk space low in virtual machine
 ```sh
 let setgbvalue = 200;//Set the disk space you want to check for. 
