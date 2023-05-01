@@ -8,7 +8,7 @@ Heartbeat
 | summarize Lastbeat = arg_max(TimeGenerated, *) by Computer, ComputerEnvironment
 | where Lastbeat < ago(5m)
 | summarize by Computer, ComputerEnvironment
-
+```
 #### query below will show the Machines with less than 10 Gb. With free diskspace.
 ```sh
 InsightsMetrics
