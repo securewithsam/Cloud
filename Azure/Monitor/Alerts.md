@@ -9,7 +9,17 @@ Heartbeat
 | where Lastbeat < ago(5m)
 | summarize by Computer, ComputerEnvironment
 
+#### query below will show the Machines with less than 10 Gb. With free diskspace.
+```sh
+InsightsMetrics
+| where Name == "FreeSpacePercentage"
+| summarize arg_max(TimeGenerated, *) by Tags
+// arg_max over TimeGenerated returns the latest record
+| project TimeGenerated, Computer, Val, Tags
+| where Val < 10
 ```
+
+
 #### Create azure monitor alert when my disk space low in virtual machine
 ```sh
 let setgbvalue = 200;//Set the disk space you want to check for. 
