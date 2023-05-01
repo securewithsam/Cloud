@@ -18,6 +18,19 @@ InsightsMetrics
 | project TimeGenerated, Computer, Val, Tags
 | where Val < 10
 ```
+#### Or
+
+```sh
+Perf
+| where ObjectName == "LogicalDisk" and CounterName == "% Free Space"
+| summarize FreeSpace = min(CounterValue) by Computer, InstanceName
+| where strlen(InstanceName) ==2 and  InstanceName contains ":"
+| where FreeSpace < 10
+| sort by FreeSpace asc
+
+| render barchart kind=unstacked
+
+```
 
 
 #### Create azure monitor alert when my disk space low in virtual machine
