@@ -68,18 +68,21 @@ let MB=Perf|where ObjectName=="LogicalDisk" and CounterName=="Free Megabytes"|su
 #### CPU Utilization:
 
 ```sh
+
 let a=Heartbeat
 | summarize arg_max(TimeGenerated, *) by Computer, ComputerEnvironment
 | distinct Computer, ComputerEnvironment;
 let b= Perf
-| where CounterName contains "% Processor Time" ;
+| where CounterName contains "% Processor Time";
 a
 | join
 (
 b
 )
 on Computer
-| summarize AggregatedValue= avg(CounterValue) by Computer, ComputerEnvironment, CounterName, bin(TimeGenerated, 5m)
+| summarize AggregatedValue= round(avg(CounterValue),2) by Computer, ComputerEnvironment, CounterName, bin(TimeGenerated, 5m)
+| sort by TimeGenerated desc 
+
 ```
 
 
