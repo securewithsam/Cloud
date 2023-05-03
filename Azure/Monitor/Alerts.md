@@ -104,5 +104,11 @@ on Computer
 
 ```
 
+#### VM Deletion Start Activity
+```sh
+AzureActivity
+| where OperationNameValue == "Microsoft.Compute/virtualMachines/delete"
+| where ActivityStatus == "Started" and ActivityStatusValue == "Started"
+| project TimeGenerated, CallerIpAddress, CategoryValue,Level,Caller,ResourceGroup, Resource, Properties
 
-
+```
