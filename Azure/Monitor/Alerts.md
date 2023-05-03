@@ -96,7 +96,9 @@ a
 b
 )
 on Computer
-| summarize AggregatedValue= avg(CounterValue) by Computer, ComputerEnvironment, CounterName, bin(TimeGenerated, 5m)
+| summarize AggregatedValue= round(avg(CounterValue),2) by Computer, ComputerEnvironment, CounterName, bin(TimeGenerated, 5m)
+| sort by TimeGenerated desc 
+
 ```
 
 
