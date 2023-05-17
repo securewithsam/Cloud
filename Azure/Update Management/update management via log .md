@@ -1,7 +1,8 @@
 ##### Update Management deployment
 
 Step:1 Create log analytics workspace
-```shlog-um-prd-01
+```sh
+log-um-prd-01
 log-um-dev-01
 ```
 ```sh
