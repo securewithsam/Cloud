@@ -1,11 +1,11 @@
 ##### Update Management deployment
 
-Step:1 Create log analytics workspace
 ```sh
+Step:1 Create log analytics workspace
+
 log-um-prd-01
 log-um-dev-01
-```
-```sh
+
 Step2: Create a policy and attach at the subscription & RG level to install log agent for all vms when created 
 
 Step3: Automation account
