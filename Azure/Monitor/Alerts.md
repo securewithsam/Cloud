@@ -1,6 +1,16 @@
 On Azure portal go to >Log Analytics workspaces>Logs 
 #### https://github.com/tobiasmcvey/kusto-queries
 
+### VM Availability
+
+```sh
+// To create an alert for this query, click '+ New alert rule'
+Heartbeat
+| where TimeGenerated > ago(1d)
+| summarize heartbeat_count = count() by bin(TimeGenerated, 30m), Computer, _ResourceId // bin is used to set the time grain to 30 minutes
+| extend alive=iff(heartbeat_count > 0, true, false)
+| sort by TimeGenerated asc // sort the results by time (ascending order)
+```
 
 #### Heartbeat:
 ```sh
