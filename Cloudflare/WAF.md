@@ -1,6 +1,11 @@
-### Cloudflare Best practises 
+### Cloudflare Best practices 
 
-1# Rate Limiting 
+1# Allow only from Canada
+![image](https://github.com/securewithsam/Cloud/assets/85324643/491ddd35-2920-4c18-9ceb-5a9b509322a6)
+
+
+
+2# Rate Limiting 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/587f2184-e59f-4e58-832f-3c025cfa959a)
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/fc24fd7b-3104-48a9-9ff1-f11ff2ae816a)
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/156a0842-480e-4e12-be65-7d4a7ea12869)
@@ -8,7 +13,7 @@
 
 
 
-2# Custom Rules
+3# Custom Rules
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/bf01a910-c605-44cb-9a58-c65e3f5bcfed)
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/96d1ac72-5616-4b76-b60e-037b733f2d3f)
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/63569b67-4d53-4d50-b3d1-295bcaa52128)
