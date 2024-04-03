@@ -30,6 +30,7 @@
 (http.user_agent contains "Yandex") or (http.user_agent contains "muckrack") or (http.user_agent contains "Qwantify") or (http.user_agent contains "Sogou") or (http.user_agent contains "BUbiNG") or (http.user_agent contains "CFNetwork") or (http.user_agent contains "Scrapy") or (http.user_agent contains "SemrushBot") or (http.user_agent contains "AhrefsBot") or (http.user_agent contains "Baiduspider") or (http.user_agent contains "python-requests") or (http.user_agent contains "crawl" and cf.client.bot) or (http.user_agent contains "bot" and not http.user_agent contains "bingbot" and not http.user_agent contains "Google" and not http.user_agent contains "Twitter" and cf.client.bot) or (http.user_agent contains "Spider" and cf.client.bot and http.user_agent contains "ninja" and http.user_agent contains "attackbot" and http.user_agent contains "backdorbot")
 ```
 #### Block Digital Ocean ASN from other countries
+#### Bad ASN List - https://github.com/brianhama/bad-asn-list/blob/master/bad-asn-list.csv
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/53b8019c-4002-49ee-86d0-07f6d30af216)
 
 ```sh
