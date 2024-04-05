@@ -36,3 +36,14 @@
 ```sh
 (ip.geoip.asnum in {14061 16276 36352 51167 60117 53667 31034 24940 12876 40021 19994 8560 16509}) or (ip.geoip.asnum in {24940 397630 4134} and ip.geoip.country in {"RU" "CN"} and ip.geoip.continent in {"AS" "NA" "OC" "SA"})
 ```
+#### Form and Comment Spam (Expression)
+![image](https://github.com/securewithsam/Cloud/assets/85324643/1243b40c-8012-4be8-9ab0-5cf419acb0c8)
+
+```sh
+(http.request.uri contains "/wp-admin/admin-ajax.php" and http.request.method eq "POST" and not http.referer contains "yourwebsitehere.com") or (http.request.uri contains "/wp-comments-post.php" and http.request.method eq "POST" and not http.referer contains "yourwebsitehere.com")
+```
+####  Challenge Comment Spam 
+![image](https://github.com/securewithsam/Cloud/assets/85324643/0abad31f-b007-497c-b59d-e5b01da90ddd)
+
+
+
