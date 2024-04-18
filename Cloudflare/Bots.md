@@ -1,5 +1,5 @@
-`<br>`Bot Score =1 (Most Likely a BOT) `<br>`
-Bot Score = 2-29 (Machine Learning) 
+Bot Score =1 (Most Likely a BOT) <br />
+Bot Score = 2-29 (Machine Learning) <br />
 Higher Score = Most likely a Human 
 
 #### Cloudflare Recommended - Block Bots and Allow API Traffic for the specific website 
