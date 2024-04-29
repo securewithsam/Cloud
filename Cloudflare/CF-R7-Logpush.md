@@ -17,5 +17,25 @@
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/e58fe95b-ee6f-40ff-9b84-3e6044198cf0)
 
+```sh
+{
+	"Version": "2012-10-17",
+	"Id": "Policy150667777792",
+	"Statement": [
+		{
+			"Sid": "Stmt1506627777918",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::3917777777948:user/cloudflare-logpush"
+			},
+			"Action": "s3:PutObject",
+			"Resource": "arn:aws:s3:::cc-cac-cf-r7-logpush-dev/*"
+		}
+	]
+}
 
+```
+
+Then go to cloudflare , and hit Validate Access
+![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
 
