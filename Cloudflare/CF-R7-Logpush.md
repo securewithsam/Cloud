@@ -36,6 +36,35 @@
 
 ```
 
+### Testing for multiuser access
+
+```sh
+{
+	"Version": "2012-10-17",
+	"Id": "Policy1506627184792",
+	"Statement": [
+		{
+			"Sid": "Stmt1506627150918",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::391854517948:user/cloudflare-logpush"
+			},
+			"Action": "s3:PutObject",
+			"Resource": "arn:aws:s3:::ec-cac-cf-r7-logpush-dev/*"
+		},
+		{
+			"Sid": "Statement1",
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::478958651604:user/svcp-awsrapid7"
+			},
+			"Action": "s3:GetObject",
+			"Resource": "arn:aws:s3:::ec-cac-cf-r7-logpush-dev/*"
+		}
+	]
+}
+```
+
 ##### Then go to cloudflare , and hit Validate Access
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
 
