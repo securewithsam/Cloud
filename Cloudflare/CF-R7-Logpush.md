@@ -36,6 +36,17 @@
 
 ```
 
+
+
+##### Then go to cloudflare , and hit Validate Access
+![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
+
+##### After the validation is success , you will receive a ownership token in the S3 bucket , click download and copy paste the token 
+![image](https://github.com/securewithsam/Cloud/assets/85324643/4e87b5af-7cb9-48a3-950f-579be6631780)
+
+
+
+
 ### Testing for multiuser access
 
 ```sh
@@ -56,18 +67,11 @@
 			"Sid": "Statement1",
 			"Effect": "Allow",
 			"Principal": {
-				"AWS": "arn:aws:iam::478958651604:user/svcp-awsrapid7"
+				"AWS": "arn:aws:iam::478958651604:user/svct-aawwssraapiid7"
 			},
 			"Action": "s3:GetObject",
-			"Resource": "arn:aws:s3:::ec-cac-cf-r7-logpush-dev/*"
+			"Resource": "arn:aws:s3:::cc-eac-cf-r7-logspush-devst/*"
 		}
 	]
 }
 ```
-
-##### Then go to cloudflare , and hit Validate Access
-![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
-
-##### After the validation is success , you will receive a ownership token in the S3 bucket , click download and copy paste the token 
-![image](https://github.com/securewithsam/Cloud/assets/85324643/4e87b5af-7cb9-48a3-950f-579be6631780)
-
