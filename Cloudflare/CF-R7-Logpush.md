@@ -41,6 +41,8 @@
 ##### Then go to cloudflare , and hit Validate Access
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
 
+![image](https://github.com/securewithsam/Cloud/assets/85324643/bf6cdc1d-8d08-4b6e-b5f4-16be83040a6a)
+
 ##### After the validation is success , you will receive a ownership token in the S3 bucket , click download and copy paste the token 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/4e87b5af-7cb9-48a3-950f-579be6631780)
 
