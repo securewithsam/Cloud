@@ -7,8 +7,6 @@
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/0ae0909c-0d72-480b-ab58-c19f1a372351)
 
-![image](https://github.com/securewithsam/Cloud/assets/85324643/67308a61-817a-46fa-8317-95ff4255cbdd)
-
 
 ##### Then go to cloudflare , and hit Validate Access
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/34fb55e9-a22c-449c-8704-346d15fae7da)
