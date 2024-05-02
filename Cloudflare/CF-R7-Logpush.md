@@ -11,7 +11,8 @@
 
 
 ##### Then go to cloudflare , and hit Validate Access
-![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
+![image](https://github.com/securewithsam/Cloud/assets/85324643/34fb55e9-a22c-449c-8704-346d15fae7da)
+
 
 ```sh
 {
