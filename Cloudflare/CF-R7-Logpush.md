@@ -9,14 +9,6 @@
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/67308a61-817a-46fa-8317-95ff4255cbdd)
 
-![image](https://github.com/securewithsam/Cloud/assets/85324643/a2607337-702b-4961-b4f3-2eb61931a461)
-
-![image](https://github.com/securewithsam/Cloud/assets/85324643/704408b1-3578-4282-abe5-8c56f4bbcf2c)
-
-![image](https://github.com/securewithsam/Cloud/assets/85324643/f44670e2-6afb-405a-9e36-67b6b1cd9e62)
-
-![image](https://github.com/securewithsam/Cloud/assets/85324643/e58fe95b-ee6f-40ff-9b84-3e6044198cf0)
-
 ```sh
 {
 	"Version": "2012-10-17",
@@ -40,6 +32,16 @@
 
 ##### Then go to cloudflare , and hit Validate Access
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/a2607337-702b-4961-b4f3-2eb61931a461)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/704408b1-3578-4282-abe5-8c56f4bbcf2c)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/f44670e2-6afb-405a-9e36-67b6b1cd9e62)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/e58fe95b-ee6f-40ff-9b84-3e6044198cf0)
+
+
 
 ##### After the validation is success , you will receive a ownership token in the S3 bucket , click download and copy paste the token 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/4e87b5af-7cb9-48a3-950f-579be6631780)
