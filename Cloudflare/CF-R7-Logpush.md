@@ -9,6 +9,10 @@
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/67308a61-817a-46fa-8317-95ff4255cbdd)
 
+
+##### Then go to cloudflare , and hit Validate Access
+![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
+
 ```sh
 {
 	"Version": "2012-10-17",
@@ -28,10 +32,6 @@
 
 ```
 
-
-
-##### Then go to cloudflare , and hit Validate Access
-![image](https://github.com/securewithsam/Cloud/assets/85324643/04f98ac4-d529-4c7b-9f11-f863d3389ce0)
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/a2607337-702b-4961-b4f3-2eb61931a461)
 
