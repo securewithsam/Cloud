@@ -7,6 +7,9 @@
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/0ae0909c-0d72-480b-ab58-c19f1a372351)
 
+![image](https://github.com/securewithsam/Cloud/assets/85324643/561e86e0-514b-4e12-bfb8-25906c55222c)
+
+
 ##### After this go to S3 Bucket and edit the policy , after its saved, you will receive a ownership token , copy and paste as seen below and validate .
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/bf6cdc1d-8d08-4b6e-b5f4-16be83040a6a)
