@@ -51,47 +51,21 @@
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/bf6cdc1d-8d08-4b6e-b5f4-16be83040a6a)
 
 
-
-
-### Testing for multiuser access
-
-```sh
-{
-	"Version": "2012-10-17",
-	"Id": "Policy1506627184792",
-	"Statement": [
-		{
-			"Sid": "Stmt1506627150918",
-			"Effect": "Allow",
-			"Principal": {
-				"AWS": "arn:aws:iam::391854517948:user/cloudflare-logpush"
-			},
-			"Action": "s3:PutObject",
-			"Resource": "arn:aws:s3:::ec-cac-cf-r7-logpush-dev/*"
-		},
-		{
-			"Sid": "Statement1",
-			"Effect": "Allow",
-			"Principal": {
-				"AWS": "arn:aws:iam::478958651604:user/svct-aawwssraapiid7"
-			},
-			"Action": "s3:GetObject",
-			"Resource": "arn:aws:s3:::cc-eac-cf-r7-logspush-devst/*"
-		}
-	]
-}
-```
-
 #### Adding Event source in Rapid7 
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/886be7f3-0d0f-47fa-984a-41c9bdfbf30e)
 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/f0b7e179-13e5-4639-8c62-fc00d8528739)
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/7cb68207-8efb-46a4-9725-e3926158464c)
-![image](https://github.com/securewithsam/Cloud/assets/85324643/d3378dbf-d543-4e80-b2ad-6506c7517980)
 
+After selecting Create New
+ Go To AWS S3 >IAM and create a user and generate access key credentials 
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/3f6bbe81-4b1e-4771-ad86-8ef113e29bc4)
 ![image](https://github.com/securewithsam/Cloud/assets/85324643/8205f18e-c4b7-4245-bfe5-b7540923ad17)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/d3378dbf-d543-4e80-b2ad-6506c7517980)
+
+
 
 
 
