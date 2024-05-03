@@ -81,3 +81,21 @@
 	]
 }
 ```
+
+#### Adding Event source in Rapid7 
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/886be7f3-0d0f-47fa-984a-41c9bdfbf30e)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/f0b7e179-13e5-4639-8c62-fc00d8528739)
+![image](https://github.com/securewithsam/Cloud/assets/85324643/7cb68207-8efb-46a4-9725-e3926158464c)
+![image](https://github.com/securewithsam/Cloud/assets/85324643/d3378dbf-d543-4e80-b2ad-6506c7517980)
+
+![image](https://github.com/securewithsam/Cloud/assets/85324643/3f6bbe81-4b1e-4771-ad86-8ef113e29bc4)
+![image](https://github.com/securewithsam/Cloud/assets/85324643/8205f18e-c4b7-4245-bfe5-b7540923ad17)
+
+
+
+
+
+
+
