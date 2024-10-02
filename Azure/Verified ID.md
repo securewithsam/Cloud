@@ -1,5 +1,11 @@
 To create a **Web App for Helpdesk Access** that provides a URL where helpdesk personnel can guide users through identity verification or password reset processes, follow these steps. The web app will serve as an interface for helpdesk staff to initiate a user identity verification via **Microsoft Verified ID** and assist users in resetting their passwords securely.
 
+### 1. **Prerequisites**
+   - **Microsoft Entra Verified ID**: Ensure that your organization has access to this service, which is part of **Microsoft Entra**.
+   - **Azure Active Directory**: You need AAD for managing users, configuring authentication policies, and enabling password resets.
+   - **Authenticator App Setup**: Users need to have the **Microsoft Authenticator** app installed and configured for their accounts.
+   - **Custom Web App**: A web application that can guide the helpdesk team and end-users through the verification process.
+
 ### Overview of the Web App Functionality:
 1. **Helpdesk Access Page**: Helpdesk agents can log in and generate a unique URL to send to users.
 2. **User Identity Verification**: The URL directs users to a page where they scan a QR code to verify their identity via **Microsoft Authenticator** or **Verified ID** credentials.
