@@ -1,8 +1,8 @@
 #### Strengthen your cloud security posture
 
-✅ 1. Data Breach
- 🔹 Double-check encryption settings — CSPs don’t encrypt by default.
- 🔹 Ensure data at rest and in transit is encrypted.
+✅ 1. Data Breach|
+ 🔹 Double-check encryption settings — CSPs don’t encrypt by default.|
+ 🔹 Ensure data at rest and in transit is encrypted.|
 ✅ 2. Misconfiguration & Inadequate Change Control
  🔹 Remove default credentials for services and APIs.
  🔹 Regularly review access controls and permissions.
